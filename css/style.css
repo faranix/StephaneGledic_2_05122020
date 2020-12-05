@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    font-family: "Raleway", sans-serif;
+}
+
 li {
     list-style: none;
 }
@@ -117,18 +121,108 @@ input[type=search] {
 
     /* Filtre */ 
 
+.filtre {
+    padding: 20px;
+}
+
 .filtre-box {
     margin: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 15.5%);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .filtre-box-button {
-    max-width: 40%;
+    position: relative;
+    max-height: 72%;
     padding: 10px;
-    border: 2px solid #f2f2f2;
+    display: flex;
+}
+
+.filtre-box-button:nth-child(1){
+    grid-column: 1;
+}
+
+.filtre-box-button:nth-child(2){
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.filtre-box-button:nth-child(3){
+    grid-column: span 5;
+    grid-row: 3;
+}
+
+.filtre-box-button:nth-child(4){
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.filtre-box-button:hover {
+    transform: scale(1.05);
+    transition: 400ms;
 }
 
 .filtre-box-button__label {
-    
+    z-index: 2;
+    font-size: 1rem;
+    border: #DEEBFF solid 1px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 100%;
+    padding: 12px;  
+    position: absolute;
+    left: -14px;
+}
+
+.filtre-box-button__text {
+    border: 2px solid #f2f2f2;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+
+    /* Information Logement */
+
+.information-logement {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.information-logement__text {
+    width: 80%;
+}
+
+.information-logement__circle {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    max-height: 20px;
+    padding: 2px 10px;
+    font-size: 0.5rem;
+    border: solid #f2f2f2 2px;
+    border-radius: 100%;
+    color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    /* Hébergement marseille */ 
+
+.populaire {
+    height: 500px;
+    background-color: #f2f2f2;
+}
+
+.populaire-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 70px;
 }
 
 
