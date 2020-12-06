@@ -274,6 +274,215 @@ input[type=search] {
 
     /* hebergement */
 
+.hebergement {
+    height: 700px;
+    background-color: #ffffff;
+}
+
+.hebergement-title {
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.hebergement-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hebergement-box__article {
+    background-color: #fff;
+    padding: 5px;
+    margin: 5px 0px;
+    max-width: 90%;
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -10px;
+}
+
+.hebergement__img {
+    max-height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+}
+
+.hebergement-box-article__text {
+    padding: 5px 10px;
+}
+
+.hebergement-box-article-text__h4 {
+    margin: 3px;
+}
+
+.hebergement-box-article-text__p {
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+.hebergement-star {
+    margin-left: 5px;
+}
+
+.afficher-plus {
+    padding: 20px;
+}
+
+    /* Activite */
+
+#activite {
+    min-height: 1400px;
+    margin-top: 790px;
+    padding: 0px 20px;
+}
+
+#activite h3 {
+    margin-top: 50px;
+}
+
+.activite-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+}
+
+/* Box de Gauche */
+
+.activite-box__leftbox {
+    min-width: 100%;
+    height: 469px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftbox__1 {
+    background: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    min-width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 8px 20px -15px;
+    margin-bottom: 20px;
+}
+
+.leftbox__2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.leftbox__small-1  {
+    background: url(../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    min-height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 8px 20px -15px;
+}
+
+.leftbox__small-2  {
+    background: url(../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    min-height: 200px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 8px 20px -15px;
+}
+
+/* Box de droite */
+
+.activite-box__rightbox {
+    min-width: 100%;
+    height: 469px;
+    margin-top: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rightbox__1 {
+    background: url(../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 8px 20px -15px;
+}
+
+.rightbox__2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rightbox__small-1  {
+    background: url(../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    min-height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 8px 20px -15px;
+}
+
+.rightbox__small-2  {
+    background: url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    min-height: 200px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 8px 20px -15px;
+}
+
+/* box text */
+
+.activite__text {
+    width: 100%;
+    padding: 15px 0 15px 25px;
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: bold;
+}
+
+.footer-box {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+}
+
+.footer-box__little-box {
+    margin: 40px 0px;
+}
+
+.footer-box__separateur {
+    margin: 10px;
+}
+
+
+
 
 
 
