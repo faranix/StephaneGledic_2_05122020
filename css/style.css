@@ -1,0 +1,280 @@
+/* ALL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.fa-star {
+    font-size: 0.6rem;
+    color: #DEEBFF;
+}
+
+.checked {
+    color: #0065FC;
+}
+
+/* Header */
+
+header {
+    min-width: 100%;
+}
+
+.logo {
+    max-width: 100px;
+    padding: 20px;
+}
+
+.inscrire {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    max-width: 425px;
+    width: 100%;
+    height: 30px;
+}
+
+.menu__element {
+    border-bottom: solid 2px#f2f2f2;
+    width: 50%;
+    text-align: center;
+}
+
+.menu__element:hover {
+    border-bottom: solid 2px #0065FC;
+    color: #0065FC;
+}
+
+/* Main */
+
+    /* Title */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 20px;
+    max-width: 80%;
+}
+
+.title__h1 {
+    font-size: 1.2rem;
+}
+
+.title__p {
+    font-size: 0.9rem;
+    margin-top: 7px;
+}
+
+    /* Formulaire */
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    font-size: 1rem;
+    margin-top: 30px;
+    border: solid #f2f2f2 1px;
+    border-radius: 11px;
+}
+
+.form__label {
+    max-width: 10%;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+}
+
+.form__input {
+    width: 100%;
+}
+
+input[type=search] {
+    border: hidden;
+    padding: 10px;
+    width: 100%;
+}
+
+.form__boutton {
+    min-width: 10%;
+    background-color: #0065FC;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+    /* Filtre */ 
+
+.filtre {
+    padding: 20px;
+}
+
+.filtre-box {
+    margin: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 15.5%);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.filtre-box-button {
+    position: relative;
+    max-height: 72%;
+    padding: 10px;
+    display: flex;
+}
+
+.filtre-box-button:nth-child(1){
+    grid-column: 1;
+}
+
+.filtre-box-button:nth-child(2){
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.filtre-box-button:nth-child(3){
+    grid-column: span 5;
+    grid-row: 3;
+}
+
+.filtre-box-button:nth-child(4){
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.filtre-box-button:hover {
+    transform: scale(1.05);
+    transition: 400ms;
+}
+
+.filtre-box-button__label {
+    z-index: 2;
+    font-size: 1rem;
+    border: #DEEBFF solid 1px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 100%;
+    padding: 12px;  
+    position: absolute;
+    left: -14px;
+}
+
+.filtre-box-button__text {
+    border: 2px solid #f2f2f2;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+
+    /* Information Logement */
+
+.information-logement {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.information-logement__text {
+    width: 80%;
+}
+
+.information-logement__circle {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    max-height: 20px;
+    padding: 2px 10px;
+    font-size: 0.5rem;
+    border: solid #f2f2f2 2px;
+    border-radius: 100%;
+    color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    /* Les plus populaires */ 
+
+.populaire {
+    height: 570px;
+    background-color: #f2f2f2;
+}
+
+.populaire-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.populaire-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.populaire-box__article {
+    background-color: #fff;
+    padding: 5px;
+    margin: 5px 0px;
+    max-width: 90%;
+    width: 90%;
+    height: 130px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.populaire-box-article__text {
+    margin: 10px 40px 0px 20px;
+
+}
+
+.populaire-box-article-text__h4 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.populaire-box-article-text__p {
+    font-size: 0.8rem;
+    margin-bottom: 23%;
+}
+
+.populaire__img {
+    max-width: 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+    /* hebergement */
+
+
+
+
+

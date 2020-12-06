@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservia</title>
+
+    <!-- Lier la fiche CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- Les Polices -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Les ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img src="images/logo/Reservia@3x.png" alt="logo de Reservia" class="logo">
+            <p class="inscrire">S'inscrire</p>
+            <nav class="box-menu">
+                <ul class="menu">
+                    <li class="menu__element">Hébergement</li>
+                    <li class="menu__element">Activités</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="title">
+                <h1 class="title__h1">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="title__p">En plein centre ville ou en pleine nature</p>
+            </div>
+
+            <div class="form">
+                <div class="form__label">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="form__input">
+                    <input type="search">
+                </div>
+                <div class="form__boutton">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <div class="filtre">
+                <h3 class="filtre__title">Filtres</h3>
+                <div class="filtre-box">
+                    <div class="filtre-box-button">
+                        <div class="filtre-box-button__label"><i class="fas fa-money-bill-wave fas__color"></i></div>
+                        <p class="filtre-box-button__text">Économique</p>
+                    </div>
+
+                    <div class="filtre-box-button">
+                        <div class="filtre-box-button__label"><i class="fas fa-heart fas__color"></i></div>
+                        <p class="filtre-box-button__text">Romantique</p>
+                    </div>
+
+                    <div class="filtre-box-button">
+                        <div class="filtre-box-button__label"><i class="fas fa-dog fas__color"></i></div>
+                        <p class="filtre-box-button__text">Animaux autorisés</p>
+                    </div>
+
+                    <div class="filtre-box-button">
+                        <div class="filtre-box-button__label"><i class="fas fa-child fas__color"></i></div>
+                        <p class="filtre-box-button__text">Familial</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="information-logement">
+                <div class="information-logement__circle"><i class="fas fa-info"></i></div>
+                <p class="information-logement__text">Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+
+            <section class="populaire">
+                <div class="populaire-title">
+                    <h3 class="populaire-title__h3">Les plus populaires</h3>
+                    <p class="populaire-title__p"><i class="fas fa-chart-line"></i></p>
+                </div>
+
+                <div class="populaire-box">
+                    <div class="populaire-box__article">
+                        <img src="images/hebergements/4_small/hotel_le_soleil.jpg" alt="Hôtel le soleil du matin" class="populaire__img">
+                        <div class="populaire-box-article__text">
+                            <h4 class="populaire-box-article-text__h4">Hôtel Le soleil du matin</h4>
+                            <p class="populaire-box-article-text__p">Nuit à partir de <span>128€</span></p>
+                            <div class="populaire__ranting-star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="populaire-box__article">
+                        <img src="images/hebergements/4_small/Au_coeur_de_l'eau.jpg" alt="Au coeur de l'eau Chambres d'hôtes" class="populaire__img">
+                        <div class="populaire-box-article__text">
+                            <h4 class="populaire-box-article-text__h4">Au coeur de l'eau Chambres d'hôtes</h4>
+                            <p class="populaire-box-article-text__p">Nuit à partir de <span>71€</span></p>
+                            <div class="populaire__ranting-star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="populaire-box__article">
+                        <img src="images/hebergements/4_small/hotel_tout_bleu_et_blanc.jpg" alt="Hôtel Tout bleu et Blanc" class="populaire__img">
+                        <div class="populaire-box-article__text">
+                            <h4 class="populaire-box-article-text__h4">Hôtel Tout Bleu et Blanc</h4>
+                            <p class="populaire-box-article-text__p">Nuit à partir de <span>68€</span></p>
+                            <div class="populaire__ranting-star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hebergement">
+                <div class="hebergement-box">
+                    <h4 class="hebergement-box__h4">Hébergements á Marseille</h4>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
