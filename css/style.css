@@ -274,6 +274,62 @@ input[type=search] {
 
     /* hebergement */
 
+.hebergement {
+    height: 700px;
+    background-color: #ffffff;
+}
+
+.hebergement-title {
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.hebergement-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hebergement-box__article {
+    background-color: #fff;
+    padding: 5px;
+    margin: 5px 0px;
+    max-width: 90%;
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -10px;
+}
+
+.hebergement__img {
+    max-height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergement-box-article__text {
+    padding: 5px 10px;
+}
+
+.hebergement-box-article-text__h4 {
+    margin: 3px;
+}
+
+.hebergement-box-article-text__p {
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+.hebergement-star {
+    margin-left: 5px;
+}
+
+.afficher-plus {
+    padding: 20px;
+}
+
 
 
 
