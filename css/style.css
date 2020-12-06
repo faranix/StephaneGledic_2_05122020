@@ -334,7 +334,7 @@ input[type=search] {
     /* Activite */
 
 #activite {
-    min-height: 1500px;
+    min-height: 1400px;
     margin-top: 790px;
     padding: 0px 20px;
 }
@@ -466,6 +466,19 @@ input[type=search] {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     font-weight: bold;
+}
+
+.footer-box {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+}
+
+.footer-box__little-box {
+    margin: 40px 0px;
+}
+
+.footer-box__separateur {
+    margin: 10px;
 }
 
 
