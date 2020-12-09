@@ -128,7 +128,6 @@ input[type=search] {
     padding: 10px;
     text-align: center;
     border-radius: 10px;
-    
 }
 
 
@@ -172,11 +171,6 @@ input[type=search] {
     grid-row: 1;
 }
 
-.filtre-box-button:hover {
-    transform: scale(1.05);
-    transition: 400ms;
-}
-
 .filtre-box-button__label {
     z-index: 2;
     font-size: 0.5rem;
@@ -186,7 +180,8 @@ input[type=search] {
     border-radius: 100%;
     padding: 12px;  
     position: absolute;
-    left: -14px;
+    left: -10px;
+    font-size: 12px;
 }
 
 .filtre-box-button__text {
@@ -194,7 +189,12 @@ input[type=search] {
     border-top-right-radius: 9999px;
     border-bottom-right-radius: 9999px;
     padding: 10px 40px;
+    font-size: 14px;
     font-weight: bold;
+}
+
+.filtre-box-button__text:focus {
+    color: red;
 }
 
     /* Information Logement */
@@ -263,17 +263,22 @@ input[type=search] {
 
 .populaire-box-article__text {
     margin: 10px 40px 0px 20px;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .populaire-box-article-text__h4 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
 }
 
 .populaire-box-article-text__p {
     font-size: 0.8rem;
-    margin-bottom: 23%;
+}
+
+.populaire__ranting-star {
+    display: flex;
+    margin-top: 35px;
 }
 
 .populaire__img {
@@ -568,25 +573,34 @@ input[type=search] {
 
 
 @media screen and (max-width: 375px) {
+    .filtre-box {
+        margin-left: 0px;
+    }
+
     .filtre-box-button {
-        max-height: 30px;
+        max-height: 40px;
         display: flex;
     }
 
     .filtre-box-button__text {
-        font-size: 7px;
+        font-size: 13px;
     }
 
     .filtre-box-button__label {
         left: -8px;
-        max-height: 5px;
-        font-size: 10px;
+        min-height: 13px;
+        font-size: 11px;
         display: flex;
         align-items: center;
     }
 
+    .populaire-box-article-text__h4 {
+        font-size: 1rem;
+    }
+    
+
     .information-logement__text {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .information-logement__circle {
@@ -601,17 +615,32 @@ input[type=search] {
     }
 
     .filtre-box-button__label {
-        left: -5px;
-        max-height: 5px;
+        left: -5px; 
+        font-size: 13px;
+        min-height: 0px;
+        max-height: 8px;
+    }
+
+    .filtre-box-button__text {
+        font-size: 8px;
     }
 
     .information-logement__text {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .information-logement__circle {
         font-size: 8px;
-        min-height: 20px;
+        max-height: 15px;
+    }
+
+    .populaire-box-article-text__h4 {
+        font-size: 0.8rem;
+    }
+
+    .populaire-box-article-text__p {
+        font-size: 0.7rem;
+        margin-bottom: 0px;
     }
 }
 
@@ -641,10 +670,15 @@ input[type=search] {
 
     .filtre-box-button__label {
         left: -8px;
-        max-height: 10px;
-        font-size: 10px;
+        font-size: 14px;
         display: flex;
         align-items: center;
+    }
+
+    .populaire__img {
+        background-position: center;
+        background-size: cover;
+        background-position-y: center;
     }
 
     .hebergement-box__article {
@@ -717,8 +751,22 @@ input[type=search] {
 
 
     .form {
-        max-width: 30%;
+        max-width: 35%;
     }
+
+    .form__boutton i{
+        display: none;
+    }
+
+    .form__boutton {
+        min-width: 25%
+    }
+    
+    .form__boutton::after {
+        content: "recherche";
+        font-size: initial;
+    }
+
 
     .filtre {
         display: flex;
@@ -739,6 +787,11 @@ input[type=search] {
 
     .filtre-box-button {
         margin-right: 10px;
+    }
+
+    .filtre-box-button:hover {
+        transform: scale(1.05);
+        transition: 400ms;
     }
 
     .information-logement {
