@@ -1127,6 +1127,10 @@ input[type=search] {
         height: 84%;
     }
 
+    .populaire-box-article-text__h4 {
+        font-size: 18px;
+    }
+
     .populaire-box__article {
         margin-bottom: 30px;
     }
