@@ -581,6 +581,11 @@ input[type=search] {
 
 .footer-box__separateur {
     margin: 10px;
+    font-size: 15px;
+}
+
+.footer-box__titre {
+    font-size: 20px;
 }
 
 
@@ -856,6 +861,7 @@ input[type=search] {
     
     .form__boutton::after {
         content: "Rechercher";
+        font-weight: bold;
         font-size: initial;
     }
 
